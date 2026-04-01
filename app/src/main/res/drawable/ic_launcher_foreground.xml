@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Yellow starburst background shape -->
+    <path
+        android:fillColor="#F5D800"
+        android:pathData="M54,10 L61,38 L88,24 L70,48 L98,54 L70,60 L88,84 L61,70 L54,98 L47,70 L20,84 L38,60 L10,54 L38,48 L20,24 L47,38 Z"/>
+
+    <!-- Lock body -->
+    <path
+        android:fillColor="#0A0A0A"
+        android:pathData="M38,52 L38,68 Q38,72 42,72 L66,72 Q70,72 70,68 L70,52 Q70,48 66,48 L42,48 Q38,48 38,52 Z"/>
+
+    <!-- Lock shackle -->
+    <path
+        android:fillColor="#0A0A0A"
+        android:strokeColor="#0A0A0A"
+        android:strokeWidth="5"
+        android:fillAlpha="0"
+        android:pathData="M44,48 L44,40 Q44,30 54,30 Q64,30 64,40 L64,48"/>
+
+    <!-- Keyhole -->
+    <path
+        android:fillColor="#F5D800"
+        android:pathData="M54,56 m-4,0 a4,4 0 1,0 8,0 a4,4 0 1,0 -8,0 M52,60 L53,67 L55,67 L56,60 Z"/>
+
+</vector>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  10-pointed starburst badge shape using path data.
+  Used for the spinning "STAY FOCUSED" badge on the home screen.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="90dp"
+    android:height="90dp"
+    android:viewportWidth="100"
+    android:viewportHeight="100">
+    <path
+        android:fillColor="#E8132A"
+        android:pathData="M50,5 L57,35 L88,20 L68,45 L95,55 L65,60 L75,92 L50,72 L25,92 L35,60 L5,55 L32,45 L12,20 L43,35 Z"/>
+</vector>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Doomscroll Destroyer</string>
+    <string name="notif_channel_name">Doomscroll Destroyer</string>
+    <string name="accessibility_service_description">Watches when Instagram opens so Doomscroll Destroyer can track your usage time and show the blocker overlay. No data leaves your phone.</string>
+</resources>

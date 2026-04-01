@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Diagonal hazard stripe fill for progress bar.
+  Android doesn't support CSS diagonal stripes natively,
+  so we use a solid red fill that pulses via animation in code.
+-->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid android:color="#E8132A"/>
+</shape>

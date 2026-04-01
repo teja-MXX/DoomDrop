@@ -1,0 +1,23 @@
+# Android build outputs
+*.apk
+*.aab
+*.ap_
+*.dex
+
+# Build directories
+build/
+app/build/
+.gradle/
+
+# Android Studio files
+*.iml
+.idea/
+.DS_Store
+local.properties
+
+# Gradle wrapper JAR (downloaded by CI)
+gradle/wrapper/gradle-wrapper.jar
+
+# Keystore files (never commit these)
+*.jks
+*.keystore

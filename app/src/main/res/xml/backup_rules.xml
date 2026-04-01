@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  backup_rules.xml
+  Include our SharedPreferences in Android's auto-backup.
+  This means even if the user uninstalls and reinstalls,
+  the blocking state (daily used seconds, lockout timestamps)
+  is restored from backup — the one true bypass prevention.
+-->
+<full-backup-content>
+    <include domain="sharedpref" path="doomscroll_state.xml"/>
+</full-backup-content>

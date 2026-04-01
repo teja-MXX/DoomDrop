@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/off_white">
+
+    <!-- TOP TICKER -->
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/brand_yellow"
+        android:scrollbars="none">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="DOOMSCROLL DESTROYER ★ YOUR DOPAMINE IS NOT FOR SALE ★ PUT THE PHONE DOWN ★ INSTAGRAM IS NOT YOUR FRIEND ★ YOU HAVE 20 MINUTES. USE THEM WISELY. ★ GO TOUCH GRASS ★"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:fontFamily="sans-serif-condensed"
+            android:letterSpacing="0.1"
+            android:gravity="center_vertical"
+            android:paddingHorizontal="16dp"/>
+    </HorizontalScrollView>
+
+    <!-- BODY ROW -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <!-- SIDEBAR -->
+        <LinearLayout
+            android:layout_width="160dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/brand_blue"
+            android:paddingTop="12dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/black"
+                android:layout_margin="10dp"
+                android:padding="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DOOM\nSCROLL\nDESTROYER"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:lineSpacingMultiplier="0.9"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="dot app!"
+                    android:textColor="@color/brand_yellow"
+                    android:textSize="13sp"
+                    android:fontFamily="cursive"/>
+            </LinearLayout>
+
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="HOME" android:background="@color/brand_yellow" android:textColor="@color/black"
+                android:textSize="22sp" android:fontFamily="sans-serif-condensed" android:letterSpacing="0.1"
+                android:paddingHorizontal="14dp" android:paddingVertical="10dp"/>
+            <View android:layout_width="match_parent" android:layout_height="3dp" android:background="@color/black"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="STATS" android:background="@color/brand_pink" android:textColor="@color/black"
+                android:textSize="22sp" android:fontFamily="sans-serif-condensed" android:letterSpacing="0.1"
+                android:paddingHorizontal="14dp" android:paddingVertical="10dp"/>
+            <View android:layout_width="match_parent" android:layout_height="3dp" android:background="@color/black"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="RULES" android:background="@color/brand_red" android:textColor="@color/white"
+                android:textSize="22sp" android:fontFamily="sans-serif-condensed" android:letterSpacing="0.1"
+                android:paddingHorizontal="14dp" android:paddingVertical="10dp"/>
+            <View android:layout_width="match_parent" android:layout_height="3dp" android:background="@color/black"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="SETUP" android:background="@color/white" android:textColor="@color/black"
+                android:textSize="22sp" android:fontFamily="sans-serif-condensed" android:letterSpacing="0.1"
+                android:paddingHorizontal="14dp" android:paddingVertical="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="bottom"
+                android:layout_marginBottom="12dp"
+                android:paddingHorizontal="10dp"
+                android:text="BLOCKER v1.0\nINSTAGRAM: BLOCKED\nTIKTOK: BLOCKED\nBRAIN: PROTECTED\n──────\nACC SVC: ON\nOVERLAY: ARMED"
+                android:textColor="#80FFFFFF"
+                android:textSize="10sp"
+                android:fontFamily="monospace"
+                android:lineSpacingMultiplier="1.4"/>
+
+        </LinearLayout>
+
+        <!-- MAIN CONTENT -->
+        <ScrollView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <!-- Headline -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TOUCH\nGRASS\nNOT REELS."
+                    android:textColor="@color/black"
+                    android:textSize="56sp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:lineSpacingMultiplier="0.85"
+                    android:layout_marginBottom="4dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="↳ your personal dopamine bouncer"
+                    android:textColor="@color/black"
+                    android:textSize="13sp"
+                    android:fontFamily="cursive"
+                    android:rotation="-1.5"
+                    android:layout_marginBottom="16dp"/>
+
+                <!-- STATUS PILL -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@color/black"
+                    android:paddingHorizontal="16dp"
+                    android:paddingVertical="8dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="12dp">
+                    <View
+                        android:id="@+id/view_status_dot"
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:background="@drawable/green_dot"
+                        android:layout_marginEnd="8dp"/>
+                    <TextView
+                        android:id="@+id/tv_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="● INSTAGRAM: FREE TO USE"
+                        android:textColor="@color/white"
+                        android:textSize="13sp"
+                        android:fontFamily="sans-serif-condensed"
+                        android:letterSpacing="0.15"/>
+                </LinearLayout>
+
+                <!-- TIMER BOXES -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="12dp">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:background="@color/black"
+                        android:padding="14dp"
+                        android:layout_marginEnd="8dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="DAILY QUOTA LEFT"
+                            android:textColor="@color/brand_yellow"
+                            android:textSize="10sp"
+                            android:fontFamily="sans-serif-condensed"
+                            android:letterSpacing="0.3"/>
+                        <TextView
+                            android:id="@+id/tv_daily_remaining"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="20m 00s"
+                            android:textColor="@color/green_neon"
+                            android:textSize="40sp"
+                            android:fontFamily="monospace"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="resets at midnight"
+                            android:textColor="#666666"
+                            android:textSize="9sp"
+                            android:fontFamily="monospace"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:background="@color/black"
+                        android:padding="14dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="SESSION TRIP WIRE"
+                            android:textColor="@color/brand_yellow"
+                            android:textSize="10sp"
+                            android:fontFamily="sans-serif-condensed"
+                            android:letterSpacing="0.3"/>
+                        <TextView
+                            android:id="@+id/tv_session_remaining"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1m 00s"
+                            android:textColor="@color/green_neon"
+                            android:textSize="40sp"
+                            android:fontFamily="monospace"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1 min open = 30 min lockout"
+                            android:textColor="#666666"
+                            android:textSize="9sp"
+                            android:fontFamily="monospace"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!-- PROGRESS BAR -->
+                <FrameLayout
+                    android:id="@+id/progress_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp"
+                    android:background="@drawable/progress_track"
+                    android:layout_marginBottom="16dp">
+                    <View
+                        android:id="@+id/view_progress"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/progress_fill"/>
+                </FrameLayout>
+
+                <!-- STATS ROW -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="16dp">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:background="@color/black"
+                        android:padding="12dp"
+                        android:layout_marginEnd="8dp">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="LOCKOUTS TODAY" android:textColor="@color/brand_yellow"
+                            android:textSize="9sp" android:fontFamily="sans-serif-condensed" android:letterSpacing="0.3"/>
+                        <TextView android:id="@+id/tv_lockout_count"
+                            android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="0" android:textColor="@color/brand_red"
+                            android:textSize="36sp" android:fontFamily="monospace"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:background="@color/black"
+                        android:padding="12dp">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="TIME USED TODAY" android:textColor="@color/brand_yellow"
+                            android:textSize="9sp" android:fontFamily="sans-serif-condensed" android:letterSpacing="0.3"/>
+                        <TextView android:id="@+id/tv_used_time"
+                            android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="0m 00s" android:textColor="@color/green_neon"
+                            android:textSize="36sp" android:fontFamily="monospace"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!-- PERMISSION SETUP SECTION -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SETUP (do once)"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:letterSpacing="0.2"
+                    android:layout_marginBottom="8dp"/>
+
+                <Button
+                    android:id="@+id/btn_enable_accessibility"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:text="1. ENABLE ACCESSIBILITY SERVICE"
+                    android:backgroundTint="@color/black"
+                    android:textColor="@color/white"
+                    android:textSize="13sp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:letterSpacing="0.15"
+                    android:layout_marginBottom="8dp"/>
+
+                <Button
+                    android:id="@+id/btn_enable_overlay"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:text="2. ALLOW DISPLAY OVER OTHER APPS"
+                    android:backgroundTint="@color/brand_blue"
+                    android:textColor="@color/white"
+                    android:textSize="13sp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:letterSpacing="0.15"
+                    android:layout_marginBottom="8dp"/>
+
+                <Button
+                    android:id="@+id/btn_enable_usage_stats"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:text="3. GRANT USAGE STATS ACCESS"
+                    android:backgroundTint="@color/brand_red"
+                    android:textColor="@color/white"
+                    android:textSize="13sp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:letterSpacing="0.15"
+                    android:layout_marginBottom="16dp"/>
+
+                <!-- STICKERS -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="skill issue tbh"
+                        android:background="@drawable/sticker_red"
+                        android:textColor="@color/white"
+                        android:textSize="13sp"
+                        android:fontFamily="cursive"
+                        android:paddingHorizontal="12dp"
+                        android:paddingVertical="5dp"
+                        android:rotation="1.5"
+                        android:layout_margin="4dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="dopamine regulated"
+                        android:background="@drawable/sticker_blue"
+                        android:textColor="@color/white"
+                        android:textSize="13sp"
+                        android:fontFamily="cursive"
+                        android:paddingHorizontal="12dp"
+                        android:paddingVertical="5dp"
+                        android:rotation="-2.5"
+                        android:layout_margin="4dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="touch grass pls"
+                        android:background="@drawable/sticker_yellow"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        android:fontFamily="cursive"
+                        android:paddingHorizontal="12dp"
+                        android:paddingVertical="5dp"
+                        android:rotation="2"
+                        android:layout_margin="4dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>
