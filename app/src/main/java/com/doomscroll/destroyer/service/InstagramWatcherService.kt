@@ -84,7 +84,6 @@ class InstagramWatcherService : AccessibilityService() {
         if (BlockerState.isBlocked(this)) {
             OverlayManager.showBlockOverlay(this)
             // Kick user back to home screen
-            performGlobalAction(GLOBAL_ACTION_HOME)
             return
         }
 
