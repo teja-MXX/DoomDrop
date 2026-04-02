@@ -70,23 +70,26 @@
                 android:paddingHorizontal="14dp" android:id="@+id/nav_home" android:gravity="center" 
                 android:clickable="true" android:focusable="true" android:layout_height="52dp" android:paddingVertical="10dp"/>
             <View android:layout_width="match_parent" android:layout_height="3dp" android:background="@color/black"/>
+            
             <TextView android:layout_width="match_parent" android:layout_height="52dp"
                 android:text="STATS" android:background="@color/brand_pink" android:textColor="@color/black"
                 android:textSize="22sp" android:fontFamily="sans-serif-condensed" android:letterSpacing="0.1"
                 android:paddingHorizontal="14dp" android:paddingVertical="10dp" android:id="@+id/nav_stats"
-            android:gravity="center" android:clickable="true" android:focusable="true" android:layout_height="52dp" />
+            android:gravity="center" android:clickable="true" android:focusable="true" />
             <View android:layout_width="match_parent" android:layout_height="3dp" android:background="@color/black"/>
+            
             <TextView android:layout_width="match_parent" android:layout_height="52dp"
                 android:text="RULES" android:background="@color/brand_red" android:textColor="@color/white"
                 android:textSize="22sp" android:fontFamily="sans-serif-condensed" android:letterSpacing="0.1"
                 android:paddingHorizontal="14dp" android:paddingVertical="10dp" 
                 android:id="@+id/nav_rules" android:gravity="center" android:clickable="true" android:focusable="true" android:layout_height="52dp" />
             <View android:layout_width="match_parent" android:layout_height="3dp" android:background="@color/black"/>
+            
             <TextView android:layout_width="match_parent" android:layout_height="52dp"
                 android:text="SETUP" android:background="@color/white" android:textColor="@color/black"
                 android:textSize="22sp" android:fontFamily="sans-serif-condensed" android:letterSpacing="0.1"
                 android:paddingHorizontal="14dp" android:paddingVertical="10dp" android:id="@+id/nav_setup" 
-                android:gravity="center" android:clickable="true" android:focusable="true" android:layout_height="52dp" />
+                android:gravity="center" android:clickable="true" android:focusable="true" />
 
             <TextView
                 android:layout_width="match_parent"
