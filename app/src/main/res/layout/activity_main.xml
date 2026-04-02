@@ -64,7 +64,7 @@
                     android:fontFamily="cursive"/>
             </LinearLayout>
 
-            <TextView android:layout_width="match_parent" android:layout_height="52dp"
+            <TextView android:layout_width="match_parent" 
                 android:text="HOME" android:background="@color/brand_yellow" android:textColor="@color/black"
                 android:textSize="22sp" android:fontFamily="sans-serif-condensed" android:letterSpacing="0.1"
                 android:paddingHorizontal="14dp" android:id="@+id/nav_home" android:gravity="center" 
