@@ -73,7 +73,7 @@ class InstagramWatcherService : AccessibilityService() {
             isInstagram && !wasInstagram -> onInstagramOpened()
 
             // Instagram just went to background
-            !isInstagram && wasInstagram -> onInstagramClosed()
+            !isInstagram && wasInstagram -> onInstagramLeft()
         }
     }
 
@@ -98,15 +98,14 @@ class InstagramWatcherService : AccessibilityService() {
         startForegroundService(intent)
     }
 
-    private fun onInstagramClosed() {
-        BlockerState.onInstagramClosed(this)
-
-        // Tell foreground service to pause ticking
-        val intent = Intent(this, BlockerForegroundService::class.java).apply {
-            action = BlockerForegroundService.ACTION_PAUSE_TICKING
-        }
-        startService(intent)
+    private fun onInstagramLeft() {
+    BlockerState.onInstagramClosed(this)
+    OverlayManager.dismiss(this)
+    val intent = Intent(this, BlockerForegroundService::class.java).apply {
+        action = BlockerForegroundService.ACTION_PAUSE_TICKING
     }
+    startService(intent)
+}
 
     override fun onInterrupt() {
         OverlayManager.dismiss(this)

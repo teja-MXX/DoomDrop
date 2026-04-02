@@ -57,7 +57,7 @@ fun scheduleMidnightReset(context: Context) {
     }
 
     // Use setExactAndAllowWhileIdle so it fires even in doze mode
-    alarmManager.setExactAndAllowWhileIdle(
+    alarmManager.set(
         AlarmManager.RTC_WAKEUP,
         midnight.timeInMillis,
         pendingIntent

@@ -77,7 +77,6 @@ object OverlayManager {
             WindowManager.LayoutParams.TYPE_APPLICATION_OVERLAY,
             // FLAG_NOT_FOCUSABLE removed so back-press doesn't bypass
             WindowManager.LayoutParams.FLAG_LAYOUT_IN_SCREEN or
-                    WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS or
                     WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS,
             PixelFormat.TRANSLUCENT
         ).apply {

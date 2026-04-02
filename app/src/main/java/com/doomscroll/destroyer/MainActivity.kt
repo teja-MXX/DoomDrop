@@ -13,6 +13,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.doomscroll.destroyer.receiver.scheduleMidnightReset
 import com.doomscroll.destroyer.service.BlockerForegroundService
 import com.doomscroll.destroyer.utils.BlockerState
+import androidx.appcompat.app.AlertDialog
 
 class MainActivity : AppCompatActivity() {
 
@@ -37,8 +38,44 @@ class MainActivity : AppCompatActivity() {
         }
 
         setupButtons()
+        setupNavButtons()
+        startTicker()
         checkPermissions()
     }
+
+    private fun startTicker() {
+    val ticker = findViewById<TextView>(R.id.tv_ticker)
+    ticker.isSelected = true
+    ticker.requestFocus()
+}
+
+private fun setupNavButtons() {
+    findViewById<TextView>(R.id.nav_home).setOnClickListener { }
+    findViewById<TextView>(R.id.nav_stats).setOnClickListener { showStatsDialog() }
+    findViewById<TextView>(R.id.nav_rules).setOnClickListener { showRulesDialog() }
+    findViewById<TextView>(R.id.nav_setup).setOnClickListener {
+        startActivity(Intent(this, PermissionSetupActivity::class.java))
+    }
+}
+
+private fun showStatsDialog() {
+    val used = BlockerState.getUsedSeconds(this)
+    val lockouts = BlockerState.getLockoutCount(this)
+    val remaining = BlockerState.getRemainingSeconds(this)
+    AlertDialog.Builder(this)
+        .setTitle("YOUR STATS")
+        .setMessage("Used: ${used/60}m ${used%60}s\nRemaining: ${remaining/60}m ${remaining%60}s\nLockouts today: $lockouts")
+        .setPositiveButton("GOT IT") { d, _ -> d.dismiss() }
+        .show()
+}
+
+private fun showRulesDialog() {
+    AlertDialog.Builder(this)
+        .setTitle("THE RULES")
+        .setMessage("01. 20 minutes per day. Hard stop.\n\n02. 1 min open = 30 min lockout. Seconds accumulate.\n\n03. After 20 mins: gone until midnight.\n\n04. Resets at 12:00 AM.\n\n05. We will roast you. The overlay only shows while Instagram is open — switch apps and it disappears.")
+        .setPositiveButton("UNDERSTOOD") { d, _ -> d.dismiss() }
+        .show()
+}
 
     override fun onResume() {
         super.onResume()
