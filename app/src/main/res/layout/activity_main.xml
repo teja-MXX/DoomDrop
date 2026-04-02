@@ -82,7 +82,7 @@
                 android:text="RULES" android:background="@color/brand_red" android:textColor="@color/white"
                 android:textSize="22sp" android:fontFamily="sans-serif-condensed" android:letterSpacing="0.1"
                 android:paddingHorizontal="14dp" android:paddingVertical="10dp" 
-                android:id="@+id/nav_rules" android:gravity="center" android:clickable="true" android:focusable="true" android:layout_height="52dp" />
+                android:id="@+id/nav_rules" android:gravity="center" android:clickable="true" android:focusable="true" />
             <View android:layout_width="match_parent" android:layout_height="3dp" android:background="@color/black"/>
             
             <TextView android:layout_width="match_parent" android:layout_height="52dp"
