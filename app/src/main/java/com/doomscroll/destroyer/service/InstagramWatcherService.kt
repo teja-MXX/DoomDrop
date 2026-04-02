@@ -63,18 +63,21 @@ class InstagramWatcherService : AccessibilityService() {
 
         // Ignore our own overlay windows
         if (pkg == OUR_PACKAGE) return
+        if (pkg == "android") return
 
         val wasInstagram = currentForegroundPackage in WATCHED_PACKAGES
         val isInstagram = pkg in WATCHED_PACKAGES
         currentForegroundPackage = pkg
 
         when {
-            // Instagram just came to foreground
-            isInstagram && !wasInstagram -> onInstagramOpened()
-
-            // Instagram just went to background
-            !isInstagram && wasInstagram -> onInstagramLeft()
+    isInstagram && !wasInstagram -> onInstagramOpened()
+    !isInstagram && wasInstagram -> {
+        // Only treat as left if user went to a real app, not system UI or our overlay
+        if (pkg != "android" && pkg != "com.android.systemui" && !pkg.contains("launcher")) {
+            onInstagramLeft()
         }
+    }
+}
     }
 
     private fun onInstagramOpened() {
